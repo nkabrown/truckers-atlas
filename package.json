@@ -4,9 +4,11 @@
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.1",
+    "lit-analyzer": "2.0.0-pre.1",
     "prettier": "2.6.2"
   },
   "lint-staged": {
+    "*.js": "lit-analyzer",
     "*.js": "eslint --cache --fix",
     "*.{js,css,json,md}": "prettier --write"
   },
