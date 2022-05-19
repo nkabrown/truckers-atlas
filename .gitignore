@@ -1,0 +1,5 @@
+# ignore Desktop Services Store
+.DS_Store
+
+# ignore JS dependencies
+node_modules/
