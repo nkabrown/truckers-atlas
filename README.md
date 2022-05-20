@@ -15,3 +15,12 @@ npm install
 # enable Git pre-commit hook
 npm run prepare
 ```
+
+## Supporting Documentation
+
+**Development Dependencies**
+[lint-staged](https://github.com/okonet/lint-staged)
+[lit-analyzer](https://github.com/runem/lit-analyzer/tree/master/packages/lit-analyzer)
+[web-dev-server](https://modern-web.dev/docs/dev-server/overview/)
+
+**Dependencies**
