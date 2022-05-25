@@ -3,3 +3,6 @@
 
 # ignore JS dependencies
 node_modules/
+
+# ignore ESLint cache
+.eslintcache
