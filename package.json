@@ -1,6 +1,8 @@
 {
   "devDependencies": {
+    "@esm-bundle/chai": "^4.3.4-fix.0",
     "@web/dev-server": "^0.1.31",
+    "@web/test-runner": "^0.13.28",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
@@ -9,12 +11,12 @@
     "prettier": "2.6.2"
   },
   "lint-staged": {
-    "*.js": "src/**/*.js",
     "*.js": "eslint --cache --fix",
     "*.{js,css,json,md}": "prettier --write"
   },
   "scripts": {
     "prepare": "husky install",
-    "start": "wds --node-resolve --open src/ --watch"
+    "start": "wds --node-resolve --open src/ --watch",
+    "test": "wtr test/**/*.test.js --node-resolve"
   }
 }
