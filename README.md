@@ -7,7 +7,7 @@ A portfolio product that represents who I am and reflects the level of work I ca
 ## Quickstart
 
 ```shell
-# test npm version, if version < 7 run npm install -g npm@latest
+# test npm version, if version < 7 run 'npm install -g npm@latest'
 npm --version
 
 npm install
@@ -19,10 +19,13 @@ npm run prepare
 ## Supporting Documentation
 
 **Development Dependencies**
-[lint-staged](https://github.com/okonet/lint-staged)
-[lit-analyzer](https://github.com/runem/lit-analyzer/tree/master/packages/lit-analyzer)
-[web-dev-server](https://modern-web.dev/docs/dev-server/overview/)
-[web-test-runner](https://modern-web.dev/docs/test-runner/overview/)
-[chai](https://www.chaijs.com/)
+
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [lit-analyzer](https://github.com/runem/lit-analyzer/tree/master/packages/lit-analyzer)
+- [web-dev-server](https://modern-web.dev/docs/dev-server/overview/)
+- [web-test-runner](https://modern-web.dev/docs/test-runner/overview/)
+- [chai](https://www.chaijs.com/)
 
 **Dependencies**
+
+- [Lit](https://lit.dev)

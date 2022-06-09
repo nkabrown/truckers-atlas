@@ -2,12 +2,12 @@
   "devDependencies": {
     "@esm-bundle/chai": "^4.3.4-fix.0",
     "@web/dev-server": "^0.1.31",
-    "@web/test-runner": "^0.13.28",
-    "eslint": "^8.15.0",
+    "@web/test-runner": "^0.13.30",
+    "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
-    "lint-staged": "^12.4.1",
-    "lit-analyzer": "2.0.0-pre.1",
+    "lint-staged": "^13.0.1",
+    "lit-analyzer": "^2.0.0-pre.2",
     "prettier": "2.6.2"
   },
   "lint-staged": {
@@ -18,5 +18,8 @@
     "prepare": "husky install",
     "start": "wds --node-resolve --open src/ --watch",
     "test": "wtr test/**/*.test.js --node-resolve"
+  },
+  "dependencies": {
+    "lit": "^2.2.5"
   }
 }
