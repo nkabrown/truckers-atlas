@@ -1,0 +1,63 @@
+/**
+ * Outdated Browser Wall v1
+ *
+ * displays a full-UI wall if minimum CSS property:value pair support is lacking
+ *
+ * NOTE: intended to be copied into a project, versioned (bust cache), and left unbundled.
+ * e.g. <link rel="stylesheet" href="static/css/outdated-browser-wall.v1.css">
+ *
+ * v1 - initial relase
+ */
+html::before {
+  background-color: #142033;
+  box-sizing: border-box;
+  color: #fff;
+  content: "You are using an outdated browser. Try switching or updating to the latest version of Firefox, Chrome, Edge, Opera, or Safari.";
+  font-family: "Avenir", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  height: 100%;
+  letter-spacing: 1px;
+  line-height: 2.06;
+  overflow: auto;
+  padding: 33vh 25vw 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 9999;
+}
+
+/**
+ * Current baseline:
+ *
+ * - ff92+, chr93+, edg93+, opr79+, saf14.1+
+ *
+ * Minimum JS features:
+ *
+ *  - Public and private class fields (ff90+, chr74+, edg79+, opr62+, saf14.1+)
+ *  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_With_Private_Class_Features#browser_compatibility)
+ *
+ * Minimum CSS features:
+ *
+ *  - accent-color (ff92+, chr93+, edg93+, opr79+)
+ *
+ *  - :is() (ff78+, chr88+, edg88+, opr75+, saf14+)
+ *
+ *  - selector() (ff69+, chr83+, edg83+, opr69+, saf14.1+)
+ */
+@supports (accent-color: red) {
+  html::before {
+    display: none;
+  }
+}
+
+@supports selector(:is(*)) and selector(::part(a)) {
+  html::before {
+    display: none;
+  }
+}
+
+/* for test purposes */
+html.test-outdated::before {
+  display: block;
+}
