@@ -1,7 +1,7 @@
 /**
  * Outdated Browser Wall v1
  *
- * displays a full-UI wall if minimum CSS property:value pair support is lacking
+ * displays a full-UI wall if minimum CSS feature support is lacking
  *
  * NOTE: intended to be copied into a project, versioned (bust cache), and left unbundled.
  * e.g. <link rel="stylesheet" href="static/css/outdated-browser-wall.v1.css">
