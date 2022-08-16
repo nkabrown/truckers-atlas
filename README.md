@@ -14,6 +14,9 @@ npm install
 
 # enable Git pre-commit hook
 npm run prepare
+
+# run local development server
+npm run start
 ```
 
 ## Supporting Documentation

@@ -6,7 +6,7 @@ export class AppContainerElement extends LitElement {
   static styles = css``;
 
   render() {
-    return html`<p>Smoketest</p>`;
+    return html`<main>Smoketest</main>`;
   }
 }
 

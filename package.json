@@ -1,9 +1,9 @@
 {
   "devDependencies": {
     "@esm-bundle/chai": "^4.3.4-fix.0",
-    "@web/dev-server": "^0.1.32",
-    "@web/test-runner": "^0.13.31",
-    "eslint": "^8.19.0",
+    "@web/dev-server": "^0.1.34",
+    "@web/test-runner": "^0.14.0",
+    "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
@@ -20,6 +20,6 @@
     "test": "wtr test/**/*.test.js --node-resolve"
   },
   "dependencies": {
-    "lit": "^2.2.7"
+    "lit": "^2.3.0"
   }
 }
