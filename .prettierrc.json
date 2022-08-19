@@ -1,1 +1,17 @@
-{}
+{
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["*.json", "*.css", "*.html"],
+      "options": {
+        "singleQuote": false
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { css, html, LitElement } from "lit";
+import { css, html, LitElement } from 'lit';
 
 export class AppContainerElement extends LitElement {
   static properties = {};
@@ -10,4 +10,4 @@ export class AppContainerElement extends LitElement {
   }
 }
 
-customElements.define("app-container", AppContainerElement);
+customElements.define('app-container', AppContainerElement);
