@@ -1,10 +1,9 @@
 {
-  "singleQuote": true,
   "overrides": [
     {
-      "files": ["*.json", "*.css", "*.html"],
+      "files": ["*.js", "*.ts"],
       "options": {
-        "singleQuote": false
+        "singleQuote": true
       }
     },
     {
