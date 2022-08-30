@@ -24,6 +24,7 @@ npm run start
 **Development Dependencies**
 
 -   [chai](https://www.chaijs.com/) - make testing assertions
+-   [eslint](https://eslint.org) - static analysis to fix JavaScript problems
 -   [lint-staged](https://github.com/okonet/lint-staged) - execute scripts on staged files via git pre-commit hook
 -   [lit-analyzer](https://github.com/runem/lit-analyzer/tree/master/packages/lit-analyzer) - static analysis of lit templates
 -   [prettier](https://prettier.io) - low configuration opinionated code formatter

@@ -1,0 +1,15 @@
+env:
+  browser: true
+  es2021: true
+
+extends:
+  # https://eslint.org/docs/latest/rules/
+  - eslint:recommended
+  # https://github.com/prettier/eslint-config-prettier
+  - prettier
+
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+
+rules: {}
