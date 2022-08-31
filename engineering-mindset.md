@@ -4,6 +4,8 @@ I am using [prettier](https://prettier.io) to format this project code, particul
 
 Formatting code is an important step to complete before code review to eliminate whole classes of nit-picky issues. Reviewers can focus on more substantive issues. Rework is minimized.
 
+The formatter can be run manually over all files with `npx prettier --write .` or via `npm run format` or over any subset of files with `npx prettier --write "src/**/*.css"` as one example.
+
 When manually formatting files it's polite to keep formatting changes in a separate commit from other code changes. This makes formatting changes easy to isolate during code reviews.
 
 ## Why do I prefer YAML for my configuration files?
