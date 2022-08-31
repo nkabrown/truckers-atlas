@@ -9,6 +9,8 @@ extends:
   - plugin:wc/recommended
   # https://github.com/43081j/eslint-plugin-lit
   - plugin:lit/recommended
+  # https://open-wc.org/docs/linting/eslint-plugin-lit-a11y/overview/
+  - plugin:lit-a11y/recommended
   # https://github.com/prettier/eslint-config-prettier
   - prettier
 
@@ -23,6 +25,8 @@ plugins:
   - lit
   # https://github.com/BenoitZugmeyer/eslint-plugin-html
   - html
+  # https://open-wc.org/docs/linting/eslint-plugin-lit-a11y/overview/
+  - lit-a11y
 
 settings:
   wc:
