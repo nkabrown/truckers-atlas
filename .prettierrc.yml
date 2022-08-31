@@ -1,6 +1,7 @@
 overrides:
   - files:
       - "*.js"
+      - "*.mjs"
       - "*.ts"
     options:
       singleQuote: true
