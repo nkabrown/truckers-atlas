@@ -22,6 +22,7 @@
   },
   "scripts": {
     "lint": "eslint --fix --ext .html,.js .",
+    "format": "prettier --write .",
     "prepare": "husky install",
     "start": "wds --node-resolve --open src/ --watch",
     "test": "wtr test/**/*.test.js --node-resolve"
