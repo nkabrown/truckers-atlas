@@ -21,8 +21,12 @@
     "*.{css,json,yml,md}": "prettier --write"
   },
   "scripts": {
-    "lint": "eslint --fix --ext .html,.js .",
-    "format": "prettier --write .",
+    "format": "npm run format:prettier && npm run format:eslint",
+    "format:eslint": "eslint --fix --ext .js,.mjs,.ts,.html .",
+    "format:prettier": "prettier --write .",
+    "lint": "npm run lint:eslint & npm run lint:prettier",
+    "lint:eslint": "eslint --ext .js,.mjs,.ts,.html .",
+    "lint:prettier": "prettier --check .",
     "prepare": "husky install",
     "start": "wds --node-resolve --open src/ --watch",
     "test": "wtr test/**/*.test.js --node-resolve"
