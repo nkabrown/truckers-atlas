@@ -10,7 +10,7 @@ When manually formatting files it's polite to keep formatting changes in a separ
 
 ## Why do I prefer YAML for my configuration files?
 
-Both JSON and YAML are data serialization languages and both helpfully support comments. But YAML is becoming the preferred configuration language for infrastructure, being perceived as more human readable and simpler than JSON. I've chosen to configure my tooling with YAML wherever possible to align myself with current trends in configuration and to build familiarity with this configuration language.
+Both JSON and YAML are data serialization languages, but YAML supports comments. YAML is also becoming the preferred configuration language for infrastructure, being perceived as more human readable and simpler than JSON. I've chosen to configure my tooling with YAML wherever possible to align myself with current trends in configuration and to build familiarity with this configuration language.
 
 **Resources to learn YAML**
 
