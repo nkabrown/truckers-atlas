@@ -1,3 +1,13 @@
+# Engineering Mindset
+
+This document presents my general engineering philosophy and rationale behind selected project decisions. Consider it an engineering best practices guide.
+
+I'm also creating content for several other guides. Much of this material is prepared for apprentices at my company to help them become strong individual contributors.
+
+-   [Skill Development](./docs/skill-development.md) - engineering is much more than coding
+-   [Helpful Habits](./docs/helpful-habits.md) - small practices for compounding gains
+-   [Tools of the Trade](./docs/tools-of-trade.md) - utilizing the power of your toolkit
+
 ## Setting a Browser Support Baseline
 
 Only support relatively modern browsers. The simplest way to test user agent support is through the `@support` CSS conditional rule. Supporting relatively modern browsers enables usage of new JS, CSS, and Web API features without the need to polyfill. Users on outdated browsers are gently reminded to update or switch improving the future for both users and developers.
