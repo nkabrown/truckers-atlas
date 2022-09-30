@@ -1,0 +1,8 @@
+# Targeted browsers aligned with outdated-browser-wall.css
+
+defaults
+Firefox >= 92
+Chrome >= 93
+Edge >= 93
+Opera >= 79
+Safari >= 14.1
