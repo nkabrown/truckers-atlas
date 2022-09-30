@@ -27,6 +27,7 @@ npm run start
 -   [chai](https://www.chaijs.com/) - make testing assertions
 -   [eslint](https://eslint.org) - static analysis to fix JavaScript problems
 -   [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - turn off linting rules that conflict with prettier
+-   [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) - linting for patterns that are browser compatible
 -   [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) - linting rules for inline scripts in html
 -   [eslint-plugin-lit](https://github.com/43081j/eslint-plugin-lit) - linting rules for Lit templating library
 -   [eslint-plugin-lit-a11y](https://open-wc.org/docs/linting/eslint-plugin-lit-a11y/overview/) - linting rules for accessibility in lit components

@@ -11,6 +11,8 @@ extends:
   - plugin:lit/recommended
   # https://open-wc.org/docs/linting/eslint-plugin-lit-a11y/overview/
   - plugin:lit-a11y/recommended
+  # https://github.com/amilajack/eslint-plugin-compat
+  - plugin:compat/recommended
   # https://github.com/prettier/eslint-config-prettier
   - prettier
 
@@ -27,6 +29,8 @@ plugins:
   - html
   # https://open-wc.org/docs/linting/eslint-plugin-lit-a11y/overview/
   - lit-a11y
+  # https://github.com/amilajack/eslint-plugin-compat
+  - compat
 
 settings:
   wc:
