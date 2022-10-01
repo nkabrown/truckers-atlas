@@ -32,6 +32,8 @@ html::before {
  *
  * - ff92+, chr93+, edg93+, opr79+, saf14.1+
  *
+ * When the baseline is updated also update the targeted browsers in the `.browserslistrc` file to stay in sync.
+ *
  * Minimum JS features:
  *
  *  - Public and private class fields (ff90+, chr74+, edg79+, opr62+, saf14.1+)
