@@ -4,7 +4,10 @@
 <meta
   http-equiv="Content-Security-Policy"
   content="default-src 'none';
-    script-src 'self'; style-src 'self'; connect-src ws:"
+    script-src 'self';
+    style-src 'self' fonts.googleapis.com;
+    font-src fonts.gstatic.com;
+    connect-src ws:"
 />
 <!-- this document will be encoded in utf-8 for transmission or storage -->
 <meta charset="utf-8" />
@@ -13,5 +16,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="./static/css/outdated-browser-wall.v1.css?v=1" />
 <link rel="stylesheet" href="./static/css/global.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600;700&display=swap"
+  rel="stylesheet"
+/>
 <app-container></app-container>
 <script type="module" src="./static/js/index.js"></script>
