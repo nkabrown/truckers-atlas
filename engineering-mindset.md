@@ -10,7 +10,7 @@ I'm also creating content for several other guides. Much of this material is pre
 
 ## Setting a Browser Support Baseline
 
-Only support relatively modern browsers. The simplest way to test user agent support is through the `@support` CSS conditional rule. Supporting relatively modern browsers enables usage of new JS, CSS, and Web API features without the need to polyfill. Users on outdated browsers are gently reminded to update or switch improving the future for both users and developers.
+Only support relatively modern browsers. The simplest way to test user agent support is through the `@support` CSS conditional rule and I am checking for CSS feature support in `outdated-browser-wall.css`. Supporting relatively modern browsers enables usage of new JS, CSS, and Web API features without the need to polyfill. Users on outdated browsers are gently reminded to update or switch improving the future for both users and developers.
 
 Using the browser support baseline I've set in `outdated-browser-wall.css` with [browserslist](https://github.com/browserslist/browserslist) I can improve the targeting accuracy of some specific frontend tools. The browser support baseline is replicated in my `.browserslistrc` file.
 
