@@ -32,15 +32,15 @@ When manually formatting files it's polite to keep formatting changes in a separ
 
 ## Linting
 
--   [eslint](https://eslint.org) - static analysis to find and fix JavaScript problems
+-   [ESLint](https://eslint.org) - static analysis to find and fix JavaScript problems
 -   [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - turn off linting rules that conflict with prettier
 -   [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) - linting for browser compatible code patterns
--   [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) - linting rules for inline scripts in html
+-   [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) - apply linting rules to inline scripts in html
 -   [eslint-plugin-lit](https://github.com/43081j/eslint-plugin-lit) - linting rules for Lit templating library
 -   [eslint-plugin-lit-a11y](https://open-wc.org/docs/linting/eslint-plugin-lit-a11y/overview/) - linting rules for accessibility in lit components
 -   [eslint-plugin-wc](https://github.com/43081j/eslint-plugin-wc) - linting rules for custom elements (web components)
 
-I am using [eslint](https://eslint.org) to lint project frontend code, particularly files that are staged to be committed. Eslint statically analyzes JavaScript code looking for code patterns that may cause errors, fall short of best practices, or cause code formatting issues. Each file of code is parsed into an abstract syntax tree (AST). The linter walks down the AST and then back up visiting each node twice. Each node's type triggers related linting rules and the linter collects and reports observed errors and warnings.
+I am using [ESLint](https://eslint.org) to lint project frontend code, particularly files that are staged to be committed. ESLint statically analyzes JavaScript code looking for code patterns that may cause errors, fall short of best practices, or cause code formatting issues. Each file of code is parsed into an abstract syntax tree (AST). The linter walks down the AST and then back up visiting each node twice. Each node's type triggers related linting rules and the linter collects and reports observed errors and warnings.
 
 I use rules from the `eslint:recommend` configuration file to report common problems. I'm using `eslint-config-prettier` to turn off the layout linting rules related to code formatting since `prettier` handles those issues. I have web component/Lit specific rules from the `wc` and `lit` plugins and extend their recommended rules with a few additions. The `lit-a11y` plugin spots accessibility issues within web components/Lit. I'm using `eslint-plugin-compat` to provide IDE support and linting against my browser support baseline. My JS linting rules are applied to inline scripts in HTML by the `html` plugin.
 
