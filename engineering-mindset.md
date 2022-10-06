@@ -17,6 +17,15 @@ Only support relatively modern browsers. The simplest way to test user agent sup
 
 Using the browser support baseline I've set in `outdated-browser-wall.css` with [browserslist](https://github.com/browserslist/browserslist) I can improve the targeting accuracy of some specific frontend tools. The browser support baseline is replicated in my `.browserslistrc` file.
 
+## Pre-commit Hook
+
+-   [husky](https://github.com/typicode/husky) - easily setup git hooks
+-   [lint-staged](https://github.com/okonet/lint-staged) - execute scripts on staged files via git pre-commit hook
+
+One of the most valuable processes to improve the quality of code reviews is to setup a pre-commit hook that lints and formats all code going to a PR. Linting helps catch common errors and suggests best practices. It's an automated code review. Enforcing formatting removes whole classes of nit-picky issues around layout, such as indentation variance and semi-colon usage. This pre-commit hook can be bypassed with `git commit --no-verify`, but codebases should be kept clean of linting errors and effort should be expended to remove linting errors and warnings.
+
+I'm using [husky](https://typicode.github.io/husky/#/) to easily create git hooks. It's important to add `husky install` to your `prepare` script in `package.json` so git hooks are installed when developers run `npm install` or `npm ci`. I'm using [lint-staged](https://github.com/okonet/lint-staged) to run the formatter and linter as shell scripts on staged files. These tasks run concurrently by default but can be configured to run in order, see [task concurrency](https://github.com/okonet/lint-staged#task-concurrency).
+
 ## Code Formatting
 
 -   [prettier](https://prettier.io/) - low configuration opinionated code formatter
