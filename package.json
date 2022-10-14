@@ -21,7 +21,7 @@
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{css,json,yml,md}": "prettier --write"
+    "*.{css,json,yaml,md}": "prettier --write"
   },
   "scripts": {
     "format": "npm run format:prettier && npm run format:eslint",
