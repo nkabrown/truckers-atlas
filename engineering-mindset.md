@@ -55,7 +55,7 @@ I use rules from the `eslint:recommend` configuration file to report common prob
 
 ## Housekeeping for Linting/Formatting Tasks
 
-In POSIX a process exit status other than zero is interpreted as failure of the process to accomplish its task and an error is thrown. ESLint and Prettier will end their process with exit status `1` if a linting error or unformatted file is found. This is very helpful when incorporating linting or formatting into a CI pipeline. It's not helpful when running these processes as part of development where the goal is clean reporting of linting errors and formatting omissions. We add `exit 0` to the end of our non-CI linting/formatting scripts to report successful accomplishment of the linting/formatting task and avoid throwing errors in the terminal.
+In POSIX a process exit status other than zero is interpreted as failure of the process to accomplish its task and an error is thrown. ESLint and Prettier will end their process with exit status `1` if a linting error or unformatted file is found. This is very helpful when incorporating linting or formatting into a CI pipeline. It's not helpful when running these processes as part of development where the goal is clean reporting of linting errors and formatting omissions. I add `exit 0` to the end of my non-CI linting/formatting scripts to report successful accomplishment of the linting/formatting task and avoid throwing errors in the terminal.
 
 ## Why do I prefer YAML for my configuration files?
 
