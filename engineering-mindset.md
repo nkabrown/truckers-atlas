@@ -53,6 +53,10 @@ I am using [ESLint](https://eslint.org) to lint project frontend code, particula
 
 I use rules from the `eslint:recommend` configuration file to report common problems. I'm using `eslint-config-prettier` to turn off the layout linting rules related to code formatting since `prettier` handles those issues. I have web component/Lit specific rules from the `wc` and `lit` plugins and extend their recommended rules with a few additions. The `lit-a11y` plugin spots accessibility issues within web components/Lit. I'm using `eslint-plugin-compat` to provide IDE support and linting against my browser support baseline. My JS linting rules are applied to inline scripts in HTML by the `html` plugin.
 
+## Housekeeping for Linting/Formatting Tasks
+
+In POSIX a process exit status other than zero is interpreted as failure of the process to accomplish its task and an error is thrown. ESLint and Prettier will end their process with exit status `1` if a linting error or unformatted file is found. This is very helpful when incorporating linting or formatting into a CI pipeline. It's not helpful when running these processes as part of development where the goal is clean reporting of linting errors and formatting omissions. We add `exit 0` to the end of our non-CI linting/formatting scripts to report successful accomplishment of the linting/formatting task and avoid throwing errors in the terminal.
+
 ## Why do I prefer YAML for my configuration files?
 
 Both JSON and YAML are data serialization languages, but YAML supports comments. YAML is also becoming the preferred configuration language for infrastructure, being perceived as more human readable and simpler than JSON. I've chosen to configure my tooling with YAML wherever possible to align myself with current trends in configuration and to build familiarity with this configuration language.
