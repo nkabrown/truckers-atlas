@@ -20,6 +20,9 @@ parserOptions:
   ecmaVersion: latest
   sourceType: module
 
+ignorePatterns:
+  - test/**/*
+
 plugins:
   # https://github.com/43081j/eslint-plugin-wc
   - wc
