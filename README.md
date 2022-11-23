@@ -10,7 +10,8 @@ A portfolio product that represents who I am and reflects the level of work I ca
 # test npm version, if version < 7 run 'npm install -g npm@latest'
 npm --version
 
-npm install
+# installs exact dependencies and sets up git hooks
+npm ci
 
 # enable Git pre-commit hook
 npm run prepare

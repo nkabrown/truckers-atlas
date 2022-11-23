@@ -26,6 +26,8 @@ One of the most valuable processes to improve the quality of code reviews is to 
 
 I'm using [husky](https://typicode.github.io/husky/#/) to easily create git hooks. It's important to add `husky install` to your `prepare` script in `package.json` so git hooks are installed when new team members run `npm install` or `npm ci`. I'm using [lint-staged](https://github.com/okonet/lint-staged) to run the formatter and linter as shell scripts on staged files. These tasks run concurrently by default but can be configured to run in order avoiding race conditions, see [task concurrency](https://github.com/okonet/lint-staged#task-concurrency).
 
+You can encourage the use of the pre-commit hook by instructing developers to use `npm ci` instead of `npm install` in your READMEs. The `npm ci` command will setup available git hooks as well as install exact versions of dependencies promoting consistency across environments and between team members.
+
 ## Code Formatting
 
 -   [prettier](https://prettier.io/) - low configuration opinionated code formatter
