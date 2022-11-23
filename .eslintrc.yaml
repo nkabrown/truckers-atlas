@@ -2,6 +2,8 @@ env:
   browser: true
   es2021: true
 
+parser: "@typescript-eslint/parser"
+
 extends:
   # https://eslint.org/docs/latest/rules/
   - eslint:recommended
@@ -13,6 +15,8 @@ extends:
   - plugin:lit-a11y/recommended
   # https://github.com/amilajack/eslint-plugin-compat
   - plugin:compat/recommended
+  # https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin
+  - plugin:@typescript-eslint/recommended
   # https://github.com/prettier/eslint-config-prettier
   - prettier
 
@@ -34,6 +38,8 @@ plugins:
   - lit-a11y
   # https://github.com/amilajack/eslint-plugin-compat
   - compat
+  # https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin
+  - "@typescript-eslint"
 
 settings:
   wc:
@@ -44,3 +50,5 @@ rules:
   wc/no-constructor-params: error
   wc/no-typos: error
   wc/require-listener-teardown: error
+  # no-unused-vars redundant due to @typscript-eslint
+  no-unused-vars: off
