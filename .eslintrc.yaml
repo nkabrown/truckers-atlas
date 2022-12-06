@@ -50,5 +50,6 @@ rules:
   wc/no-constructor-params: error
   wc/no-typos: error
   wc/require-listener-teardown: error
+  lit/value-after-constraints: error
   # no-unused-vars redundant due to @typscript-eslint
   no-unused-vars: off
