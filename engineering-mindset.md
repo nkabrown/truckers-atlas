@@ -67,3 +67,13 @@ Both JSON and YAML are data serialization languages, but YAML supports comments.
 
 -   [Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml/)
 -   [Learn YAML](https://www.yaml.info/learn/index.html)
+
+## Updating Dependencies
+
+Regularly updating dependencies and dev dependencies is very beneficial for long lasting codebases.
+
+-   Run `npm outdated` to list dependencies in need of review.
+-   Review release notes and/or change logs for list of dependencies with new updates.
+    -   Is there new functionality this codebase can use?
+    -   Do changes need to be made to upgrade?
+-   Run `npx browserslist-lint` to update `caniuse-lite` database.
