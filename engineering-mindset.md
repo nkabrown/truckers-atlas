@@ -68,6 +68,12 @@ Both JSON and YAML are data serialization languages, but YAML supports comments.
 -   [Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml/)
 -   [Learn YAML](https://www.yaml.info/learn/index.html)
 
+## Upgrading Scripts
+
+-   [Wireit](https://github.com/google/wireit)
+
+I use the Wireit library to optimize `npm` script processes and re-run scripts when dependencies change. Wireit allows incremental updating of scripts with minimal changes to `package.json`, linking scripts together as dependencies, speedups to builds and testing through caching and incremental builds, and triggering scripts based on changes to watched files.
+
 ## Updating Dependencies
 
 Regularly updating dependencies and dev dependencies is very beneficial for long lasting codebases.
