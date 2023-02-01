@@ -74,7 +74,23 @@ Both JSON and YAML are data serialization languages, but YAML supports comments.
 
 I use the Wireit library to optimize `npm` script processes and re-run scripts when dependencies change. Wireit allows incremental updating of scripts with minimal changes to `package.json`, linking scripts together as dependencies, speedups to builds and testing through caching and incremental builds, and triggering scripts based on changes to watched files.
 
-## Updating Dependencies
+## Regular Dependency Updates
+
+Regular dependency updates are important for long-lasting codebases. For short-term projects and one-off scripts nothing might ever have to change, but for software that is in use for a long enough period of time everything will likely have to change, eventually. Regular dependency updates are a good practice because they chunk the amount of changes we have to review and navigate into a managable amount and save us from problematic version migrations. They keep our systems in tip-top shape and help us avoid technical debt.
+
+Make them regular because:
+
+-   You want to keep the number of changes you have to review for any dependency at any one time minimal.
+-   You want to avoid deferring breaking changes and gathering them all up into a problematic, complex, and hard to understand series of version migrations.
+-   You want to resolve security vulernabilites promptly.
+-   You want new improvements and fixes to flow into your project regularly.
+-   You want your technical debt to be minimal and managable.
+
+You want to do this knowledgably and with care. This is not an automated, thoughtless process. You want to review the change log of every dependency as you update. For prod dependencies in particular you will want to glance at the open issues that have recently come in to avoid problematic versions.
+
+Here's a short example guide to the process for frontend teams that can be added to a README or CONTRIBUTING page.
+
+**Updating Dependencies**
 
 Regularly updating dependencies and dev dependencies is very beneficial for long lasting codebases.
 
@@ -82,4 +98,5 @@ Regularly updating dependencies and dev dependencies is very beneficial for long
 -   Review release notes and/or change logs for list of dependencies with new updates.
     -   Is there new functionality this codebase can use?
     -   Do changes need to be made to upgrade?
+    -   Are any problematic issues associated with these changes?
 -   Run `npx browserslist-lint` to update `caniuse-lite` database.
