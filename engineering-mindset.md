@@ -2,11 +2,12 @@
 
 This document presents my general engineering philosophy and rationale behind selected project decisions. Consider it an engineering best practices guide.
 
-I'm also creating content for several other guides. Much of this material is prepared for apprentices at my company to help them become strong individual contributors.
+I'm also creating content for several other guides. Much of this material is prepared for engineers at my company to help them become strong individual contributors or capable tech leads.
 
 -   [Skill Development](./docs/skill-development.md) - engineering is much more than coding
 -   [Helpful Habits](./docs/helpful-habits.md) - small practices for compounding gains
 -   [Tools of the Trade](./docs/tools-of-trade.md) - utilizing the power of your toolkit
+-   [Monthly Tech Lead Checklist](./docs/tech-lead.md) - five pillars of healthy teams and sustainable projects
 
 ## Setting a Browser Support Baseline
 
