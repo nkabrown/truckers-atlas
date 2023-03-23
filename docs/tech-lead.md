@@ -8,7 +8,7 @@
 
 ## Team Health
 
-WIP
+[WIP]
 
 https://lethain.com/durably-excellent-teams
 
@@ -41,7 +41,18 @@ Regularly updating dependencies and dev dependencies is very beneficial for long
 
 ## Meaningful and Wide Code Reviews
 
-WIP
+[WIP] Why spend time on code reviews?
+
+[WIP] Why should as many team members as possible, even everyone, be on every code review?
+
+If you want to move your team towards more meaningful code reviews set an example. Write out your rationales and share them, link to relevant documentation, quote it, provide examples and counterexamples, highlight principles followed or broken. Make what you can see as you review visible to others. Open your teammates eyes so they can recognize it in the future.
+
+Avoid code reviews that devolve into rubber stamping what you see after a cursory review. Help your team move from "Looks good to me" towards "I know it's good" by encouraging reviewers to checkout PR branches and run the code themselves if possible.
+
+Additional steps to improve the code review process:
+
+-   Make sure you have a pre-commit hook setup that lints and formats all staged code before the pull request is made. This automated code review step removes whole classes of nit-picky formatting details, common errors, and can help enforce some best practices so engineers can focus on more substantive issues.
+-   Avoid large PRs. Divide your team's work up into manageable units. Keep your eyes out for issues in sprint planning with large story point totals and split large issues into smaller ones so PRs stay in check.
 
 ## Ensuring Your README Works
 
