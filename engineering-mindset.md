@@ -75,7 +75,13 @@ Both JSON and YAML are data serialization languages, but YAML supports comments.
 
 I use the Wireit library to optimize `npm` script processes and re-run scripts when dependencies change. Wireit allows incremental updating of scripts with minimal changes to `package.json`, linking scripts together as dependencies, speedups to builds and testing through caching and incremental builds, and triggering scripts based on changes to watched files.
 
-## Regular Dependency Updates
+## Repository Healthcheck
+
+-   Is there a pre-commit hook that lints and formats code prior to PRs?
+-   Are the project dependencies out-of-date?
+-   Is the README effective for new joiners?
+
+### Regular Dependency Updates
 
 Regular dependency updates are important for long-lasting codebases. For short-term projects and one-off scripts nothing might ever have to change, but for software that is in use for a long enough period of time everything will likely have to change, eventually. Regular dependency updates are a good practice because they chunk the amount of changes we have to review and navigate into a managable amount and save us from problematic version migrations. They keep our systems in tip-top shape and help us avoid technical debt.
 
@@ -101,3 +107,16 @@ Regularly updating dependencies and dev dependencies is very beneficial for long
     -   Do changes need to be made to upgrade?
     -   Are any problematic issues associated with these changes?
 -   Run `npx browserslist-lint` to update `caniuse-lite` database.
+
+### Ensuring Your README Works
+
+Many READMEs miss the mark for the types of readers who are most likely to read them: new joiners and maintainers returning after a long absence. READMEs should have all the information these readers need to independently and quickly get setup and contributing.
+
+Your README needs to have a detailed and up-to-date list of support tickets that need to be raised for a new joiner, local development instructions, and important contextual knowledge like links to dependency documentation. And this information should be ordered so that these important readers can easily find it.
+
+Take time to evaluate and improve your READMEs.
+
+-   Does your README support onboarding new team members?
+-   Is your README all someone needs to have to get up and running?
+-   Is your README up-to-date?
+-   Is the most relevant information easy to find?
