@@ -27,11 +27,11 @@
     "wireit": "^0.9.5"
   },
   "lint-staged": {
-    "*.{js,html}": [
+    "*.{html,js}": [
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{css,json,yaml,md}": "prettier --write"
+    "*.{css,json,md,yml}": "prettier --write"
   },
   "scripts": {
     "copy": "wireit",
