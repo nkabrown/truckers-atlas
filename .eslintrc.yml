@@ -5,8 +5,6 @@ env:
 parser: "@typescript-eslint/parser"
 
 extends:
-  # https://eslint.org/docs/latest/rules/
-  - eslint:recommended
   # https://github.com/43081j/eslint-plugin-wc
   - plugin:wc/recommended
   # https://github.com/43081j/eslint-plugin-lit
@@ -52,5 +50,3 @@ rules:
   wc/require-listener-teardown: error
   lit/value-after-constraints: error
   lit/no-native-attributes: error
-  # no-unused-vars redundant due to @typscript-eslint
-  no-unused-vars: off
