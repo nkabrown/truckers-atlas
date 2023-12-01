@@ -106,7 +106,7 @@ Regularly updating dependencies and dev dependencies is very beneficial for long
     -   Is there new functionality this codebase can use?
     -   Do changes need to be made to upgrade?
     -   Are any problematic issues associated with these changes?
--   Run `npx browserslist-lint` to update `caniuse-lite` database.
+-   Run `npx update-browserslist-db` to update `caniuse-lite` database.
 
 ### Ensuring Your README Works
 
